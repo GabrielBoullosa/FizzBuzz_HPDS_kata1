@@ -17,7 +17,9 @@ public class FizzBuzz_ {
     @Test
     public void should_return_number_when_it_is_not_fizz_and_not_buzz() {
         assertThat(fizzBuzz.of(1)).isEqualTo("1");
+        assertThat(fizzBuzz.of(2)).isEqualTo("2");
     }
+
 
     private class FizzBuzz {
         public String of(int number) {
