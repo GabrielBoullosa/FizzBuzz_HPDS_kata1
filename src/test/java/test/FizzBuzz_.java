@@ -40,6 +40,9 @@ public class FizzBuzz_ {
 
     private class FizzBuzz {
         public String of(int number) {
+            if(number % 15 == 0){
+                return "FizzBuzz";
+            }
             return number % 5 == 0 ? "Buzz" : number % 3 == 0 ? "Fizz" : String.valueOf(number);
         }
     }
