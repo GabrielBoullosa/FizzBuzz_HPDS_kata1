@@ -23,10 +23,14 @@ public class FizzBuzz_ {
     @Test
     public void should_return_Fizz_when_it_is_3() {
         assertThat(fizzBuzz.of(3)).isEqualTo("Fizz");
+        assertThat(fizzBuzz.of(6)).isEqualTo("Fizz");
     }
 
     private class FizzBuzz {
         public String of(int number) {
+            if (number % 3 == 0){
+                return "Fizz";
+            }
             return String.valueOf(number);
         }
     }
