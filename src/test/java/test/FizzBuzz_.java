@@ -20,6 +20,10 @@ public class FizzBuzz_ {
         assertThat(fizzBuzz.of(2)).isEqualTo("2");
     }
 
+    @Test
+    public void should_return_Fizz_when_it_is_3() {
+        assertThat(fizzBuzz.of(3)).isEqualTo("Fizz");
+    }
 
     private class FizzBuzz {
         public String of(int number) {
