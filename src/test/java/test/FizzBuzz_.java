@@ -21,15 +21,21 @@ public class FizzBuzz_ {
     }
 
     @Test
-    public void should_return_Fizz_when_it_multiple_3() {
+    public void should_return_Fizz_when_it_is_multiple_3() {
         assertThat(fizzBuzz.of(3)).isEqualTo("Fizz");
         assertThat(fizzBuzz.of(6)).isEqualTo("Fizz");
     }
 
     @Test
-    public void should_return_Buzz_when_it_multiple_5() {
+    public void should_return_Buzz_when_it_is_multiple_5() {
         assertThat(fizzBuzz.of(5)).isEqualTo("Buzz");
         assertThat(fizzBuzz.of(10)).isEqualTo("Buzz");
+    }
+
+    @Test
+    public void should_return_FizzBuzz_when_it_is_multiple_15() {
+        assertThat(fizzBuzz.of(15)).isEqualTo("FizzBuzz");
+        assertThat(fizzBuzz.of(30)).isEqualTo("FizzBuzz");
     }
 
     private class FizzBuzz {
