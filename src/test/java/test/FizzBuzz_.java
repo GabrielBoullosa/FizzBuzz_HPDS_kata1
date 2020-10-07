@@ -28,10 +28,7 @@ public class FizzBuzz_ {
 
     private class FizzBuzz {
         public String of(int number) {
-            if (number % 3 == 0){
-                return "Fizz";
-            }
-            return String.valueOf(number);
+            return number % 3 == 0 ? "Fizz" : String.valueOf(number);
         }
     }
 }
