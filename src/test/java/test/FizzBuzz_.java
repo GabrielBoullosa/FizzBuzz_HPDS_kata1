@@ -40,7 +40,19 @@ public class FizzBuzz_ {
 
     private class FizzBuzz {
         public String of(int number) {
-            return number % 15 == 0 ? "FizzBuzz" : number % 5 == 0 ? "Buzz" : number % 3 == 0 ? "Fizz" : String.valueOf(number);
+            return isMultipleOfFiveteen(number) ? "FizzBuzz" : isMultipleOfFive(number) ? "Buzz" : isMultipleOfThree(number) ? "Fizz" : String.valueOf(number);
+        }
+
+        private boolean isMultipleOfFiveteen(int number) {
+            return number % 15 == 0;
+        }
+
+        private boolean isMultipleOfFive(int number) {
+            return number % 5 == 0;
+        }
+
+        private boolean isMultipleOfThree(int number) {
+            return number % 3 == 0;
         }
     }
 }
